@@ -6,7 +6,7 @@
 template<typename T, int size>
 class TPQueue {
  private:
-    T* arr[100];
+    T* arr;
     int begin, end;
     int count;
     int stepBack(int index) {
@@ -24,7 +24,6 @@ class TPQueue {
 
  public:
     TPQueue() :
-        size(100),
         begin(0), end(0), count(0) {
         arr = new T[size + 1];
     }
