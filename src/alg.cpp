@@ -11,7 +11,7 @@ class TPQueue {
   int begin, end;
   int count;
   int stepBack(int index) {
-    int res = —index;
+    int res = --index;
     if (res < 0)
       res += size + 1;
     return res;
